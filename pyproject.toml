@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=42", "wheel", "setuptools-scm[toml]>=6.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ubrain"
+version = "0.1.0"
+dependencies = [
+	"torch",
+]
+requires-python = ">=3.11"
+authors = [
+  {name = "Maxime Carrazé"},
+  {name = "Hypolite Fardel"},
+  {name = "Abel Berling"},
+]
+maintainers = [
+]
+description = "ML environment for up scaling brain MRI"
+readme = "README.md"
+keywords = ["ML", "PyTorch", "brain MRI", "Upscaling"]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Programming Language :: Python"
+]
+
+[project.optional-dependencies]
+
+[tool.setuptools]
+packages = ["ubrain"]
+
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.md"]}
+
+
+
+
